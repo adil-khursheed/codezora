@@ -1,7 +1,36 @@
 import React from "react";
 
-const Logo = () => {
-  return <span className="text-lg font-bold font-serif">CZ</span>;
+import { cn } from "@/lib/utils";
+
+const Logo = ({
+  className,
+  ...props
+}: {
+  className?: string;
+} & React.ComponentProps<"svg">) => {
+  return (
+    <svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 923 625"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{
+        fillRule: "evenodd",
+        clipRule: "evenodd",
+        strokeLinejoin: "round",
+        strokeMiterlimit: 2,
+      }}
+      className={cn(className)}
+      {...props}
+    >
+      <g transform="matrix(1,0,0,1,-38.608324,-187.801562)">
+        <g transform="matrix(1.23854,0,0,1.23854,-141.148539,-87.31517)">
+          <path d="M580.649,232.685L513.78,293.835C513.78,293.835 394.166,283.587 341.906,303.998C278.488,328.767 226.883,406.997 223.224,470.395C219.433,536.054 266.689,605.671 316.585,633.002C366.481,660.333 454.226,669.686 500,633.519C574.413,574.723 769.611,304.515 769.611,304.515L585.128,301.931L648.689,239.92L889.672,246.121C889.672,246.121 645.8,624.658 546.026,694.841C504.047,724.37 388.315,744.499 293.331,701.559C221.937,669.283 147.701,577.857 145.193,473.495C142.314,353.665 249.576,270.272 325.714,238.886C407.372,205.226 580.649,232.685 580.649,232.685ZM633.744,671.265L890.194,671.273L852.087,726.27L590.562,726.27L633.744,671.265Z" />
+        </g>
+      </g>
+    </svg>
+  );
 };
 
 export default Logo;

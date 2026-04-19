@@ -23,7 +23,7 @@ const Navbar = () => {
         className="max-w-7xl w-full mx-auto flex items-center justify-between px-2 h-16 rounded-full glassmorphism"
       >
         <Link href={"/"} className="flex items-center gap-2 ml-4 flex-col">
-          <Logo />
+          <Logo className="size-8 fill-primary" />
         </Link>
         <motion.nav
           initial={{ opacity: 0 }}
