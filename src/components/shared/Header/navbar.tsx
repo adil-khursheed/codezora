@@ -23,7 +23,7 @@ const Navbar = () => {
         className="max-w-7xl w-full mx-auto flex items-center justify-between px-2 h-16 rounded-full glassmorphism"
       >
         <Link href={"/"} className="flex items-center gap-2 ml-4 flex-col">
-          <Logo className="size-8 fill-primary" />
+          <Logo className="size-5 fill-primary" />
         </Link>
         <motion.nav
           initial={{ opacity: 0 }}
@@ -57,11 +57,11 @@ const Navbar = () => {
             href={"/contact"}
             className={cn(
               buttonVariants({ variant: "glass", size: "xl" }),
-              "gap-2.5 hidden md:flex",
+              "gap-2.5 hidden md:flex pr-2 group/contact",
             )}
           >
             Contact us
-            <span>
+            <span className="size-8 flex items-center justify-center glassmorphism rounded-full group-hover/contact:rotate-360 transition-transform duration-300">
               <HugeiconsIcon icon={ArrowUpRight03Icon} />
             </span>
           </Link>

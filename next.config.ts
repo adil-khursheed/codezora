@@ -7,6 +7,7 @@ import "./src/env";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
+  transpilePackages: ["three"],
 };
 
 export default withPayload(nextConfig);

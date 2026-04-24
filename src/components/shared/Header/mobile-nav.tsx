@@ -40,7 +40,7 @@ const MobileNav = () => {
         <DrawerContent className="before:rounded-2xl">
           <DrawerHeader className="group-data-[vaul-drawer-direction=top]/drawer-content:text-left flex-row items-center justify-between">
             <DrawerTitle>
-              <Logo />
+              <Logo className="fill-muted size-48" />
             </DrawerTitle>
             <DrawerDescription className="sr-only">
               Navigation menu for small devices
